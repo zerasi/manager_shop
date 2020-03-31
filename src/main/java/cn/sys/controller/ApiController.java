@@ -18,6 +18,11 @@ public class ApiController {
     public String adminIndex(String pageName){
         return "index";
     }
+    
+    @RequestMapping(value="/home")
+    public String home(String pageName){
+        return "home";
+    }
 
     @RequestMapping(value="/login")
     public String adminLogin(String pageName){
